@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oii :D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #D8BFD8;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.5em;
+            color: #6d088c;
+            margin: 15px 0;
+        }
+
+        .btn-group {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        button {
+            position: absolute;
+            width: 150px;
+            height: inherit;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
+            box-shadow: 0 2px 4px gray;
+            border: 2px solid #6d088c;
+            font-size: 1.2em;
+            background: #6d088c;
+        }
+
+        #catImages {
+        display: none;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .catImage {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2 class="question" id="text">Clique no botão se você tiver triste </h2>
+        <div class="btn-group" id="button">
+            <button class="yes-btn">Ficar feliz !!!</button>
+        </div>
+
+        <div id="catImages">
+            <img class="catImage" src="images/robin1.jpeg">
+            <img class="catImage" src="images/robin2.jpeg">
+            <img class="catImage" src="images/robin3.jpeg">
+            <img class="catImage" src="images/robin4.jpeg">
+            <img class="catImage" src="images/robin5.jpeg">
+            <img class="catImage" src="images/robin6.jpeg">
+            <img class="catImage" src="images/robin7.jpeg">
+            <img class="catImage" src="images/robin8.jpeg">
+            <img class="catImage" src="images/robin9.jpeg">
+            <img class="catImage" src="images/robin10.jpeg">
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.yes-btn').addEventListener('click', function() {
+            document.getElementById('catImages').style.display = 'flex';
+            document.getElementById('text').style.display = 'none';
+            document.getElementById('button').style.display = 'none';
+        });
+    </script>    
+</body>
+
+</html>
